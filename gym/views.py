@@ -2,4 +2,4 @@ from django.http import HttpResponse
 
 # 簡単なビューを作成
 def home(request):
-    return HttpResponse("Welcome to the Gym Booking System!")
+    return HttpResponse("こんにちはともやです!")
