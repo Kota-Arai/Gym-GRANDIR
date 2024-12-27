@@ -1,6 +1,6 @@
 /* 背景とテキストのスタイル */
 .bg-dark {
-    background-color: #212529 !important;
+    background-color: #767c82d0 !important;
 }
 .text-white {
     color: #fff !important;
@@ -29,22 +29,14 @@
 /* グリッド */
 .container {
     width: 100%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    margin-right: auto;
-    margin-left: auto;
 }
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
+    flex-direction: column; /* 要素を縦に並べる */
+    align-items: center;    /* 必要に応じて中央揃え */
+    gap: 1rem;    
 }
 .col-md-4 {
-    flex: 0 0 auto;
-    width: 33.333333%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    width: 100%;
 }
 
 /* カード */
