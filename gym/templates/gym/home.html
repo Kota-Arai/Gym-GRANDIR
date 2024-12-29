@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GyM ProJeCt</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}?v=2">
 
     
 </head>
@@ -31,6 +31,8 @@
 
                     <div class="card-body">
                         <h5 class="card-title">WELCOME</h5>
+                        <nav>
+                            <a href="{% url 'about' %}">GRANDIR GYM について</a>
                         <p class="card-text">State-of-the-art equipment to meet all your fitness needs.</p>
                     </div>
                 </div>
