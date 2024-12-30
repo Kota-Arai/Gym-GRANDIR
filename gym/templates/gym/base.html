@@ -1,0 +1,35 @@
+<!DOCTYPE html>     <!--共通のヘッダーとフッター(使うかわからん。それぞれのファイルで全然違うレイアウトならこれいらない。)-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Gym Project{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>GYM Project</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a> |
+            <a href="{% url 'training' %}">Training</a> |
+            <a href="{% url 'equipment' %}">Equipment</a> |
+            <a href="{% url 'rental' %}">Rental</a> |
+            <a href="{% url 'oatmeal' %}">Oatmeal</a>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        {% block content %}
+        <!-- 各ページでオーバーライドされる -->
+        {% endblock %}
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Gym Project</p>
+    </footer>
+</body>
+</html>

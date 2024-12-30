@@ -53,5 +53,12 @@
     padding: 1rem;
 }
 .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0.125rem 0.25rem rgba(190, 9, 9, 0.075);
+}
+
+/* images(画像) */
+img {
+    width: 100%; /* 横幅をコンテナいっぱいに広げる */
+    height: 200px; /* 高さを固定 */
+    object-fit: cover; /* 内容をトリミングして縦横比を維持 */
 }
