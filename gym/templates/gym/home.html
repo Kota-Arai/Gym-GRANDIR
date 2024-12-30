@@ -28,7 +28,6 @@
             <div class="col-md-4">
                 <div class="card shadow-sm">
                     <img src="{% static 'images/welcome-gym-img.jpg' %}" alt="welcome-gym-img.jpg">
-
                     <div class="card-body">
                         <h5 class="card-title">WELCOME</h5>
                         <nav>
@@ -39,18 +38,22 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow-sm">
-                    <img src="" class="card-img-top" alt="Training">
+                    <img src="{% static 'images/reception.jpg' %}" class="card-img-top" alt="ACCESS">
                     <div class="card-body">
                         <h5 class="card-title">GRANDIR GYM</h5>
+                        <nav>
+                            <a href="{% url 'access' %}">ACCESS</a>
                         <p class="card-text">グランディールジム</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card shadow-sm">
-                    <img src="" class="card-img-top" alt="Support">
+                    <img src="{% static 'images/equipment.jpg' %}" class="card-img-top" alt="Equioment">
                     <div class="card-body">
                         <h5 class="card-title">EQUIPMENT</h5>
+                        <nav>
+                            <a href="{% url 'equipment' %}">EQUIPMENT</a>
                         <p class="card-text">設備</p>
                     </div>
                 </div>
@@ -63,14 +66,17 @@
                     <div class="card-body">
                         <h5 class="card-title">PERSONAL TRAINING</h5>
                         <p class="card-text">パーソナルトレーニング</p>
+                        <p class="card-text">しょうたにURLテキスト作って貼ってもらう</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card shadow-sm">
-                    <img src="" class="card-img-top" alt="Training">
+                    <img src="{% static 'images/oatmeal.jpg' %}" class="card-img-top" alt="OATMEAL">
                     <div class="card-body">
                         <h5 class="card-title">OATMEAL</h5>
+                        <nav>
+                            <a href="{% url 'oatmeal' %}">OATMEAL</a>
                         <p class="card-text">オートミール</p>
                     </div>
                 </div>
@@ -80,6 +86,7 @@
                     <img src="" class="card-img-top" alt="Support">
                     <div class="card-body">
                         <h5 class="card-title">PROTEIN SMOOTHIE</h5>
+                        <p class="card-text">ここもしょうたにURLテキスト作ってもらう</p>
                         <p class="card-text">プロテイン, スムージー</p>
                     </div>
                 </div>
@@ -87,9 +94,11 @@
         </div>
         <div class="col-md-4">
             <div class="card shadow-sm">
-                <img src="" class="card-img-top" alt="Support">
+                <img src="{% static 'images/rental.jpg' %}" class="card-img-top" alt="Support">
                 <div class="card-body">
                     <h5 class="card-title">ALL RENTAL</h5>
+                    <nav>
+                        <a href="{% url 'rental' %}">ALL RENTAL</a>
                     <p class="card-text">レンタル</p>
                 </div>
             </div>

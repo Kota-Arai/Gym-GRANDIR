@@ -8,6 +8,9 @@ def home(request):
 def about(request):
     return render(request, 'gym/about.html')  # gym/about.htmlを返す (アバウトページ用テンプレートをレンダリング)
 
+def access(request):
+    return render(request, 'gym/access.html')  # gym/access.htmlを返す (アクセスページ用テンプレートをレンダリング)
+
 def contact(request):  
     return render(request, 'gym/contact.html')  # gym/contact.htmlを返す (コンタクトページ用テンプレートをレンダリング)
 
@@ -16,7 +19,6 @@ def training(request):
 
 def equipment(request):  
     return render(request, 'gym/equipment.html')  # gym/equipment.htmlを返す (設備ページ用テンプレートをレンダリング)
-
 
 def rental(request):
     return render(request, 'gym/rental.html')  # gym/rental.htmlを返す (レンタルページ用テンプレートをレンダリング)

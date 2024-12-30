@@ -7,6 +7,7 @@ urlpatterns = [
     path('contact/',views.contact, name='contact'),  # /contact/にcontactビューを割り当て 
 
     # 各ページのurlを追加
+    path('access/', views.access, name='access'),   # /access/にaccessビューを割り当て
     path('training/', views.training, name='training'),   # /training/にtrainingビューを割り当て
     path('equipment/', views.equipment, name='equipment'),   # /equipment/にequipmentビューを割り当て
     path('rental/', views.rental, name='rental'),   # /rental/にrentalビューを割り当て
