@@ -1,2 +1,22 @@
-<!--このabout.htmlは ジムの概要ページにしよう-->
-<p>ジムの概要(これから作ります)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Gym</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}?v=2">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-5">
+        <h1 class="display-4">About Our GYM</h1>
+        <p class="lead">~ GRANDIR GYM ~</p>
+        <div class="image-container">
+            <img src="{% static 'images/chest.jpg' %}" alt="Image 1">
+            <img src="{% static 'images/rad.avif' %}" alt="Image 2">
+            <img src="{% static 'images/reg.jpeg' %}" alt="Image 3">
+        </div>
+    </header>
+
+</body>
+</html>
