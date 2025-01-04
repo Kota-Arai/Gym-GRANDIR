@@ -1,0 +1,36 @@
+header {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 子要素を縦方向に整列 */
+    justify-content: center; /* 垂直方向で中央揃え */
+    align-items: center; /* 水平方向で中央揃え */
+    height: 100vh; /* ヘッダーを画面全体の高さにする */
+    text-align: center; /* テキストを中央揃え */
+    background-color: #343a40; /* 背景色（例） */
+    color: white; /* 文字色 */
+}
+
+h1 {
+    margin: 0;
+    font-size: 4rem; /* タイトルのサイズ調整 */
+}
+
+p {
+    margin: 0;
+    font-size: 2rem; /* サブタイトルのサイズ調整 */
+}
+/* 画像コンテナ */
+.image-container {
+    display: flex; /* 子要素を横並びにする */
+    justify-content: under; /* コンテナの中央に配置 */
+    gap: 20px; /* 画像間の間隔 */
+    margin-top: 20px; /* タイトルとの余白 */
+}
+
+/* 画像のスタイル */
+.image-container img {
+    width: 200px; /* 画像の横幅 */
+    height: 200px; /* 画像の縦幅 */
+    object-fit: cover; /* 画像を枠に収める */
+    border-radius: 10px; /* 角を丸くする（任意） */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
