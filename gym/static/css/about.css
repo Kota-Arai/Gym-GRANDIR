@@ -34,3 +34,25 @@ p {
     border-radius: 10px; /* 角を丸くする（任意） */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 影を追加 */
 }
+
+header-1 {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 子要素を縦方向に整列 */
+
+    align-items: center; /* 水平方向で中央揃え */
+    height: 100vh; /* ヘッダーを画面全体の高さにする */
+    text-align: center; /* テキストを中央揃え */
+    background-color: #343a40; /* 背景色（例） */
+    color: white; /* 文字色 */
+}
+
+h2 {
+    margin: 0;
+    font-size: 3%; /* タイトルのサイズ調整 */
+    
+}
+
+p {
+    margin: 0;
+    font-size: 2rem; /* サブタイトルのサイズ調整 */
+}
