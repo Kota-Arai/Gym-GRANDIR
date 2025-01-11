@@ -14,7 +14,7 @@ h1 {
     font-size: 4rem; /* タイトルのサイズ調整 */
 }
 
-p {
+.lead {
     margin: 0;
     font-size: 2rem; /* サブタイトルのサイズ調整 */
 }
@@ -33,4 +33,45 @@ p {
     object-fit: cover; /* 画像を枠に収める */
     border-radius: 10px; /* 角を丸くする（任意） */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+header-1 {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 子要素を縦方向に整列 */
+
+    align-items: center; /* 水平方向で中央揃え */
+    height: 100vh; /* ヘッダーを画面全体の高さにする */
+    text-align: center; /* テキストを中央揃え */
+    background-color: #343a40; /* 背景色（例） */
+    color: white; /* 文字色 */
+}
+
+h2 {
+    margin: 0;
+    font-size: 4rem; /* タイトルのサイズ調整 */
+    
+}
+
+.text {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* サブタイトルのサイズ調整 */
+}
+.text-1 {
+    line-height: 1.6; /* 行間の調整 */
+    margin-bottom: 20px; /* 段落の下の余白を調整 */
+    font-size: 1rem;
+}
+
+#greetButton {
+    color: #007bff; 
+    text-decoration: underline; 
+    background: none;
+    border: none;
+    font: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+#greetButton:hover {
+    color: #0056b3; 
 }
