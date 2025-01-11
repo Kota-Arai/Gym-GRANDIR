@@ -14,7 +14,7 @@ h1 {
     font-size: 4rem; /* タイトルのサイズ調整 */
 }
 
-p {
+.lead {
     margin: 0;
     font-size: 2rem; /* サブタイトルのサイズ調整 */
 }
@@ -48,11 +48,30 @@ header-1 {
 
 h2 {
     margin: 0;
-    font-size: 3%; /* タイトルのサイズ調整 */
+    font-size: 4rem; /* タイトルのサイズ調整 */
     
 }
 
-p {
-    margin: 0;
-    font-size: 2rem; /* サブタイトルのサイズ調整 */
+.text {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* サブタイトルのサイズ調整 */
+}
+.text-1 {
+    line-height: 1.6; /* 行間の調整 */
+    margin-bottom: 20px; /* 段落の下の余白を調整 */
+    font-size: 1rem;
+}
+
+#greetButton {
+    color: #007bff; 
+    text-decoration: underline; 
+    background: none;
+    border: none;
+    font: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+#greetButton:hover {
+    color: #0056b3; 
 }
